@@ -21,7 +21,7 @@ namespace FFZlibScanner
                 return;
             }
 
-            string concatOutPath = $"all_blocks_concat_{Path.GetFileNameWithoutExtension(path)}.bin";
+            string concatOutPath = $"all_blocks_concat_{Path.GetFileNameWithoutExtension(path)}.zone";
             using (var concatStream = new FileStream(concatOutPath, FileMode.Create, FileAccess.Write))
             using (var reader = new BinaryReader(File.OpenRead(path)))
             {
